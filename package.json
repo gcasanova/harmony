@@ -1,16 +1,23 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "harmony",
+  "description": "Brochure site for a business",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Guillermo Casanova",
   "dependencies": {
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "react-helmet": "^5.2.0"
+    "gatsby": "1.9.277",
+    "gatsby-link": "1.6.46",
+    "gatsby-plugin-react-helmet": "2.0.11",
+    "react-helmet": "5.2.0",
+    "react-i18next": "7.5.1",
+    "i18next": "10.6.0",
+    "i18next-browser-languagedetector": "2.1.1",
+    "i18next-xhr-backend": "1.5.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "harmony",
+    "laser",
+    "harmony laser"
   ],
   "license": "MIT",
   "scripts": {
