@@ -1,0 +1,66 @@
+.navbar-default .navbar-nav > li > a > a {
+  color: black !important;
+  text-shadow: none !important;
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a > a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 4px; } }
+
+.navbar-header > img {
+  float: left; }
+
+nav {
+  border: none !important;
+  margin-bottom: 0; }
+
+nav.scroll-0 {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: rgba(255, 255, 255, 0); }
+
+nav.scroll-1 {
+  background: rgba(255, 255, 255, 0.25); }
+
+nav.scroll-2 {
+  background: rgba(255, 255, 255, 0.5); }
+
+nav.scroll-3 {
+  background: rgba(255, 255, 255, 0.75); }
+
+nav.scroll-4 {
+  background: white; }
+
+.container {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  transition: margin-top 2.1 ease; }
+
+.container.scroll-1 {
+  margin-top: 37.5px; }
+
+.container.scroll-2 {
+  margin-top: 30px; }
+
+.container.scroll-3 {
+  margin-top: 22.5px; }
+
+.container.scroll-4 {
+  margin-top: 15px; }
+
+.container > .navbar-header {
+  margin-left: 75px !important; }
+
+ul.nav.navbar-nav.navbar-right {
+  font-weight: bold;
+  margin: 7.5px -15px; }
+
+.navbar-toggle {
+  margin-top: 12px; }
+
+.navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0) !important; }
+
+.navbar-default .navbar-collapse {
+  border-color: black !important; }
