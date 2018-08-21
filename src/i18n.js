@@ -12,7 +12,7 @@ i18n
         load: 'languageOnly',
         fallbackLng: 'es',
         backend: {
-            loadPath: '/static/locales/{{lng}}/{{ns}}.json'
+            loadPath: '/locales/{{lng}}/{{ns}}.json'
         },
 
         interpolation: {
