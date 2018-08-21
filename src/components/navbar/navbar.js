@@ -1,3 +1,4 @@
+import Link from 'gatsby-link'
 import ReactDOM from 'react-dom';
 import { I18n } from 'react-i18next';
 import React, { Component } from 'react';
@@ -93,8 +94,21 @@ class myNavbar extends Component {
 
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem>{t('aboutUs.title')}</NavItem>
-                  <NavItem>{t('aboutUs.title')}</NavItem>
+                  <NavItem>
+                    <Link to="/">{t('navbar.inicio')}</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/laser">{t('navbar.laser')}</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/conocenos">{t('navbar.conocenos')}</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/precios">{t('navbar.precios')}</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link to="/contacto">{t('navbar.contacto')}</Link>
+                  </NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
