@@ -4,10 +4,12 @@ import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 
 import './navbar.css';
 
+import logoImage from '../../../public/images/navbar-logo.jpg'
+
 const myNavbar = () => (
   <Navbar fixedTop>
     <Navbar.Header>
-      {/* <Image src={tizkanImage} responsive /> */}
+      <Image width={180} src={logoImage} responsive />
     </Navbar.Header>
 
     <Navbar.Collapse>

@@ -23,7 +23,7 @@ const Layout = ({ children, data }) => (
     <Navbar />
     <div
       style={{
-        "margin-top": '102.5px'
+        "margin-top": '78px'
       }}
     >
     </div>
