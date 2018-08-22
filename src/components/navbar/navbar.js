@@ -7,9 +7,10 @@ import './navbar.css';
 import logoImage from '../../../public/images/navbar-logo.jpg'
 
 const myNavbar = () => (
-  <Navbar fixedTop>
+  <Navbar fixedTop collapseOnSelect>
     <Navbar.Header>
-      <Image width={180} src={logoImage} responsive />
+      <Image width={180} src={logoImage} />
+      <Navbar.Toggle />
     </Navbar.Header>
 
     <Navbar.Collapse>
