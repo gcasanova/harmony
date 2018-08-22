@@ -10,7 +10,7 @@ import './navbar.css';
 import i18n from '../../i18n';
 
 const myNavbar = () => (
-  <I18n>
+  <I18n wait={true}>
     {
       (t, { i18n }) => (
         <Navbar ref='navbar' fixedTop>
