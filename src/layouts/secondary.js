@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Navbar from '../components/navbar/navbar'
-import Carousel from '../components/carousel'
 
-import './index.css'
+import './secondary.css'
 
 // EXTERNAL IMPORTS
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -23,14 +22,7 @@ const Layout = ({ children, data }) => (
     <Navbar />
     <div
       style={{
-        "margin-top": '102.5px'
-      }}
-    >
-    </div>
-    <Carousel />
-    <div
-      style={{
-        margin: '0 auto',
+        margin: '102.5px auto 0 auto',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
@@ -48,7 +40,7 @@ Layout.propTypes = {
 export default Layout
 
 export const query = graphql`
-  query SiteTitleQueryIndex {
+  query SiteTitleQuerySecondary {
     site {
       siteMetadata {
         title
