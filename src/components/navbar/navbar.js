@@ -5,7 +5,7 @@ import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import './navbar.css';
 
 const myNavbar = () => (
-  <Navbar ref='navbar' fixedTop>
+  <Navbar fixedTop>
     <Navbar.Header>
       {/* <Image src={tizkanImage} responsive /> */}
     </Navbar.Header>
