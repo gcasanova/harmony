@@ -1,0 +1,22 @@
+.footer-wrap {
+    border-top: 1px solid black;
+}
+
+.footer-wrap > h6 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.footer-wrap > p {
+    font-weight: bold;
+}
+
+.footer-wrap > p > a {
+    color: #bfbfbf;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.footer-wrap > p > a:hover {
+    color: #c20690;
+}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Navbar from '../components/navbar/navbar'
+import Footer from '../components/footer/footer'
 
 import './secondary.css'
 
@@ -22,7 +23,7 @@ const Layout = ({ children, data }) => (
     <Navbar />
     <div
       style={{
-        margin: '78px auto 0 auto',
+        margin: '120px auto 0 auto',
         maxWidth: 960,
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
@@ -30,6 +31,7 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

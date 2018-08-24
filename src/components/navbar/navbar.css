@@ -3,8 +3,12 @@
   text-shadow: none !important;
   text-decoration: none; }
 
+.navbar-default .navbar-nav > li > a > a.active { 
+  color: #c20690 !important;
+}
+
 @media (min-width: 768px) {
-  .navbar-default .navbar-nav > li > a > a:hover {
+  .navbar-default .navbar-nav > li > a > a:not(.active):hover {
     border-bottom: 2px solid black;
     padding-bottom: 4px; } }
 
@@ -12,7 +16,7 @@
   .container {
     margin: 0 60px !important; } }
 
-.navbar-header > img {
+.navbar-header > a > img {
   margin: 0.5rem auto }
 
 nav {
