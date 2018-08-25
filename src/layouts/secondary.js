@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer'
 
-import './secondary.css'
+import './index.css'
 
 // EXTERNAL IMPORTS
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -28,6 +28,7 @@ const Layout = ({ children, data }) => (
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}
+      className={'secondary-content'}
     >
       {children()}
     </div>

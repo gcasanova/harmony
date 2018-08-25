@@ -24,7 +24,7 @@ const Layout = ({ children, data }) => (
     <Navbar />
     <div
       style={{
-        "margin-top": '78px'
+        "margin-top": '71px'
       }}
     >
     </div>
@@ -36,6 +36,7 @@ const Layout = ({ children, data }) => (
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
       }}
+      className={'content'}
     >
       {children()}
     </div>
