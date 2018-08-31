@@ -7,6 +7,7 @@ import Footer from '../components/footer/footer'
 import Carousel from '../components/carousel'
 
 import './index.css'
+import favicon from '../../public/favicon.ico'
 
 // EXTERNAL IMPORTS
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,11 +21,14 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Harmony Laser - Web Oficial' },
         { name: 'keywords', content: 'laser, harmony, depilación' },
       ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
+      ]}
     />
     <Navbar />
     <div
       style={{
-        "margin-top": '71px'
+        'margin-top': '71px'
       }}
     >
     </div>
