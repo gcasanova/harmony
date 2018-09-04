@@ -24,9 +24,6 @@ class myNavbar extends React.Component {
               <Link to="/laser" exact>LASER</Link>
             </NavItem>
             <NavItem>
-              <Link to="/conocenos" exact>CONOCENOS</Link>
-            </NavItem>
-            <NavItem>
               <Link to="/precios" exact>PRECIOS</Link>
             </NavItem>
             <NavItem>
