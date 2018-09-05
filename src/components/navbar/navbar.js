@@ -6,34 +6,30 @@ import './navbar.css';
 
 import logoImage from '../../../public/images/navbar-logo.png'
 
-class myNavbar extends React.Component {
-  render() {
-    return (
-      <Navbar fixedTop collapseOnSelect>
-        <Navbar.Header>
-          <Link to="/"><Image width={180} src={logoImage} /></Link>
-          <Navbar.Toggle />
-        </Navbar.Header>
+const myNavbar = () => (
+  <Navbar fixedTop collapseOnSelect>
+    <Navbar.Header>
+      <Link to="/"><Image width={180} src={logoImage} /></Link>
+      <Navbar.Toggle />
+    </Navbar.Header>
 
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem>
-              <Link to="/" exact>INICIO</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/laser" exact>LASER</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/precios" exact>PRECIOS</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/contacto" exact>CONTACTO</Link>
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    );
-  }
-}
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem>
+          <Link to="/" exact>INICIO</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/laser" exact>LASER</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/precios" exact>PRECIOS</Link>
+        </NavItem>
+        <NavItem>
+          <Link to="/contacto" exact>CONTACTO</Link>
+        </NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+)
 
 export default myNavbar;
