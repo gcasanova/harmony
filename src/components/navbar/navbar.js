@@ -7,13 +7,16 @@ import './navbar.css';
 import logoImage from '../../../public/images/navbar-logo.png'
 import facebookLogoImage from '../../../public/images/facebook-logo.svg'
 import facebookLogoImageBlack from '../../../public/images/facebook-logo-black.svg'
+import instagramLogoImage from '../../../public/images/instagram-logo.png'
+import instagramLogoImageBlack from '../../../public/images/instagram-logo-black.png'
 
 class myNavbar extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      hovering: false
+      hoveringFacebook: false,
+      hoveringInstagram: false
     };
   }
 
@@ -22,15 +25,31 @@ class myNavbar extends React.Component {
       display: 'inline-block',
       width: '32px',
       height: '32px',
-      'margin-left': '40px',
       'margin-top': '7px',
-      backgroundImage: `url(${this.state.hovering ?
+      'background-size': '32px 32px',
+      'margin-left': '40px',
+      backgroundImage: `url(${this.state.hoveringFacebook ?
         facebookLogoImage :
         facebookLogoImageBlack})`
     };
 
-    const handleMouseEnter = () => this.setState({ hovering: true });
-    const handleMouseLeave = () => this.setState({ hovering: false });
+    const instagramLogoStyle = {
+      display: 'inline-block',
+      width: '32px',
+      height: '32px',
+      'margin-left': '10px',
+      'margin-top': '7px',
+      'background-size': '32px 32px',
+      backgroundImage: `url(${this.state.hoveringInstagram ?
+        instagramLogoImage :
+        instagramLogoImageBlack})`
+    };
+
+    const handleMouseEnterFacebook = () => this.setState({ hoveringFacebook: true });
+    const handleMouseLeaveFacebook = () => this.setState({ hoveringFacebook: false });
+
+    const handleMouseEnterInstagram = () => this.setState({ hoveringInstagram: true });
+    const handleMouseLeaveInstagram = () => this.setState({ hoveringInstagram: false });
 
     return (
       <Navbar fixedTop collapseOnSelect>
@@ -53,8 +72,10 @@ class myNavbar extends React.Component {
             <NavItem>
               <Link to='/contacto' exact>CONTACTO</Link>
             </NavItem>
-            <a href='https://www.facebook.com' onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave} style={facebookLogoStyle} target='_blank' />
+            <a href='https://www.facebook.com' onMouseEnter={handleMouseEnterFacebook}
+              onMouseLeave={handleMouseLeaveFacebook} style={facebookLogoStyle} target='_blank' />
+            <a href='https://www.instagram.com' onMouseEnter={handleMouseEnterInstagram}
+              onMouseLeave={handleMouseLeaveInstagram} style={instagramLogoStyle} target='_blank' />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
