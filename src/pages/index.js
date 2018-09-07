@@ -1,7 +1,7 @@
 import React from 'react'
 
 const IndexPage = () => (
-  <div class={'text-center'}>
+  <div className={'text-center'}>
     <h2>¡Descubre un nuevo concepto de Depilación láser!</h2>
     <p>Somos el primer centro en Canarias con precios accesibles a todos los bolsillos. Podrás eliminar tu vello con lo último en Depilación Láser de Diodo.</p>
     <p>Sesiones asequibles, packs femeninos y masculinos y todo sin necesidad de comprar bonos.</p>
