@@ -9,6 +9,8 @@ import facebookLogoImage from '../../../public/images/facebook-logo.svg'
 import facebookLogoImageBlack from '../../../public/images/facebook-logo-black.svg'
 import instagramLogoImage from '../../../public/images/instagram-logo.png'
 import instagramLogoImageBlack from '../../../public/images/instagram-logo-black.png'
+import whatsappLogoImage from '../../../public/images/whatsapp-logo.png'
+import whatsappLogoImageBlack from '../../../public/images/whatsapp-logo-black.png'
 
 class myNavbar extends React.Component {
   constructor(props) {
@@ -16,8 +18,9 @@ class myNavbar extends React.Component {
 
     this.state = {
       hoveringFacebook: false,
-      hoveringInstagram: false
-    };
+      hoveringInstagram: false,
+      hoveringWhatsapp: false
+    }
   }
 
   render() {
@@ -27,7 +30,7 @@ class myNavbar extends React.Component {
       height: '32px',
       'margin-top': '7px',
       'background-size': '32px 32px',
-      'margin-left': '40px',
+      'margin-left': '15px',
       backgroundImage: `url(${this.state.hoveringFacebook ?
         facebookLogoImage :
         facebookLogoImageBlack})`
@@ -37,12 +40,24 @@ class myNavbar extends React.Component {
       display: 'inline-block',
       width: '32px',
       height: '32px',
-      'margin-left': '10px',
       'margin-top': '7px',
       'background-size': '32px 32px',
+      'margin-left': '15px',
       backgroundImage: `url(${this.state.hoveringInstagram ?
         instagramLogoImage :
         instagramLogoImageBlack})`
+    };
+
+    const whatsappLogoStyle = {
+      display: 'inline-block',
+      width: '33px',
+      height: '33px',
+      'margin-top': '7px',
+      'background-size': '33px 33px',
+      'margin-left': '40px',
+      backgroundImage: `url(${this.state.hoveringWhatsapp ?
+        whatsappLogoImage :
+        whatsappLogoImageBlack})`
     };
 
     const handleMouseEnterFacebook = () => this.setState({ hoveringFacebook: true });
@@ -50,6 +65,9 @@ class myNavbar extends React.Component {
 
     const handleMouseEnterInstagram = () => this.setState({ hoveringInstagram: true });
     const handleMouseLeaveInstagram = () => this.setState({ hoveringInstagram: false });
+
+    const handleMouseEnterWhatsapp = () => this.setState({ hoveringWhatsapp: true });
+    const handleMouseLeaveWhatsapp = () => this.setState({ hoveringWhatsapp: false });
 
     return (
       <Navbar fixedTop collapseOnSelect>
@@ -72,6 +90,8 @@ class myNavbar extends React.Component {
             <NavItem>
               <Link to='/contacto' exact>CONTACTO</Link>
             </NavItem>
+            <a href='https://www.whatsapp.com' onMouseEnter={handleMouseEnterWhatsapp}
+              onMouseLeave={handleMouseLeaveWhatsapp} style={whatsappLogoStyle} target='_blank' />
             <a href='https://www.facebook.com' onMouseEnter={handleMouseEnterFacebook}
               onMouseLeave={handleMouseLeaveFacebook} style={facebookLogoStyle} target='_blank' />
             <a href='https://www.instagram.com' onMouseEnter={handleMouseEnterInstagram}
